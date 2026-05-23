@@ -9,7 +9,7 @@ skills/
 ├── README.md
 ├── .gitmodules
 └── skills/
-    ├── frontend-code-standards/     # 本仓库内维护
+    ├── frontend-code-standards/     # Git 子模块
     └── vibe-coding-new-project/     # Git 子模块
 ```
 
@@ -20,7 +20,10 @@ skills/
 | **frontend-code-standards** | [`skills/frontend-code-standards`](skills/frontend-code-standards) | Vue 3 / ES6+ / CSS（Tailwind·UnoCSS 原子类或 BEM）前端代码生成规范 | 编写或生成前端代码、Vue 组件、样式；要求遵循团队前端规范时 |
 | **vibe-coding-new-project** | [`skills/vibe-coding-new-project`](skills/vibe-coding-new-project) | Vibe Coding 新项目：默认落盘 RESEARCH / PRD / TECH_DESIGN / AGENTS / README / TODO / `.cursorignore` / **DESIGN.md**（UI 设计规范，范本见 market-nest，标准见 [getdesign.md](https://getdesign.md/what-is-design-md)） | 从 0 到 1、新项目初始化、写 PRD / AGENTS / TODO、按五步工作流推进时（用户明确不要文档时可跳过） |
 
-子模块仓库：[beyondOurself/vibe-coding-new-project](https://github.com/beyondOurself/vibe-coding-new-project)
+子模块仓库：
+
+- [beyondOurself/frontend-code-standards](https://github.com/beyondOurself/frontend-code-standards)
+- [beyondOurself/vibe-coding-new-project](https://github.com/beyondOurself/vibe-coding-new-project)
 
 ## 安装到 Cursor
 
@@ -40,7 +43,7 @@ git clone --recurse-submodules git@github.com:beyondOurself/skills.git
 
 ```powershell
 git submodule update --init --recursive
-git submodule update --remote skills/vibe-coding-new-project
+git submodule update --remote skills/frontend-code-standards skills/vibe-coding-new-project
 ```
 
 ## 新增 Skill
